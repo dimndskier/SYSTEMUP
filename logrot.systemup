@@ -1,0 +1,13 @@
+/var/log/systemup.log {
+  daily
+  missingok
+  notifempty
+  rotate 4
+  dateext
+  dateyesterday
+  delaycompress
+  compress
+  compresscmd /bin/xz
+  compressoptions -9
+  compressext  .xz
+}
