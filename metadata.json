@@ -1,0 +1,11 @@
+{
+  "name": "wfrench-SYSTEMUP",
+  "version": "0.0.2",
+  "author": "wfrench",
+  "summary": "To provide a wholistic perspective on how long the system has been up over the past month.", 
+  "license": "Apache 2.0",
+  "source": "https://github.com/dimndskier/SYSTEMUP.git",
+  "project_page": "https://github.com/dimndskier/SYSTEMUP",
+  "issues_url": "https://github.com/dimndskier/SYSTEMUP/issues",
+}
+
