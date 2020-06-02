@@ -12,6 +12,13 @@ The logrotate policy is written to capture all data for this month,
  and rename the logfile to a date extension of the full date of the last 
  day of the month.
 
+**You must implement the logrotate policy in order to get it into place before the 1st day of each month.
+More specifically execute it one time only, and then for all months following, on the first the logfile will roll forever after.
+Do this:**
+```
+/sbin/logrotate  /root/logrot.systemup
+```
+
 ## Files
 * root-crontab - Copy the contents of this file to your crontab for root (/var/spool/cron/root), or /etc/crontab.
 * logrot.systemup - This file is the logrotate policy that should remain in /root, where the crontab entry in root-crontab that executes /sbin/logrotate points to for a configuration.
